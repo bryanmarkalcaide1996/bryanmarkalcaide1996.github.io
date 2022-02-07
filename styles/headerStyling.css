@@ -1,0 +1,107 @@
+/*----------------------------*/
+/*--------HEADER STYLING------*/
+/*----------------------------*/
+header {
+  background: #bfab94;
+  box-shadow: 0px 4px 4px rgb(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
+
+/* Combined Styling */
+#check,
+.menu-icon {
+  display: none;
+}
+
+.brand h1,
+.brand p,
+.main-nav ul li a {
+  color: white;
+  text-shadow: 0 4px 4px rgb(0, 0, 0, 0.7);
+}
+/* This ends here */
+
+/* hidden, will be shown on certain breakpoint */
+.menu-icon {
+  color: #3d3429;
+  position: absolute;
+  right: 0;
+  top: 100px;
+}
+/* This ends here */
+
+/* Brand styling */
+.brand h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 50px;
+}
+.brand p {
+  font-size: 1.1rem;
+  font-weight: 400;
+  letter-spacing: 9px;
+}
+/* This ends here */
+
+/* Navigation Links Styling */
+.main-nav ul li {
+  display: inline-block;
+}
+.main-nav ul li:nth-child(2) {
+  margin: 10px 60px;
+}
+.main-nav ul li a {
+  font-size: 1.2rem;
+}
+/* This ends here */
+
+/* Search box Styling */
+.search-box {
+  background: rgb(0, 0, 0, 0.5);
+  border-radius: 3px;
+  padding: 8px 10px;
+}
+.search {
+  background: white;
+  border-radius: 3px;
+  color: black;
+  padding: 5px 5px 5px 15px;
+  width: 250px;
+}
+.search-btn {
+  background: #cfb497;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+/* This ends here */
+
+/*----------------------------*/
+/*------HEADER ANIMATIONS-----*/
+/*----------------------------*/
+.brand:hover,
+.main-nav ul li:hover {
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
+.search-btn .fas:active {
+  color: white;
+}
+/* This ends here */
+
+/*----------------------------*/
+/*------HEADER BREAKPOINT-----*/
+/*----------------------------*/
+@media (max-width: 400px) {
+  .main-nav {
+    top: 147px;
+  }
+  .search-box {
+    align-self: flex-start;
+  }
+}
+/* This ends here */

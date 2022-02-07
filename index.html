@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&family=Podkova:wght@400;700;800&family=Red+Hat+Display:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Fontawesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+
+    <!-- Custom stylesheet -->
+    <link rel="stylesheet" href="./styles/footerStyling.css" />
+    <link rel="stylesheet" href="./styles/aboutStyling.css">
+    <link rel="stylesheet" href="./styles/storiesSection.css">
+    <link rel="stylesheet" href="./styles/heroImageStyling.css">
+    <link rel="stylesheet" href="./styles/headerStyling.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>Coffee Hub</title>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="section-container" >
+      <input type="checkbox" id="check" />
+      <label for="check" class="menu-icon">
+        <i class="fas fa-bars fa-2x"></i>
+      </label>
+
+      <!-- Brand -->
+      <div class="brand">
+        <a href="./index.html">
+          <h1>Coffee Hub</h1>
+          <p>MAGAZINE</p>
+        </a>
+      </div>
+
+      <!-- Nav links -->
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#stories">Stories</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="./view/shop.html">Shop</a></li>
+        </ul>
+      </nav>
+
+      <!-- Search box -->
+      <form action="/" method="post" class="search-box">
+        <input
+          type="text"
+          class="search"
+          id="search"
+          name="search"
+          autocomplete="off"
+        />
+        <button type="submit" class="search-btn">
+          <i class="fas fa-search"></i>
+        </button>
+      </form>
+    </header>
+
+    <!-- heroImage -->
+    <div class="heroContainer"></div>
+
+    <!--  Main -->
+    <main>
+      <!-- Stories Section -->
+      <article class="section-container stories-section" id="stories">
+        <!-- Sub Heading 2 -->
+        <h2>Latest Stories</h2>
+
+        <!-- Horizontal container -->
+        <div class="card-container">
+          <!-- Blog Card 1 -->
+          <div class="blog-card">
+            <!-- Blog Image -->
+            <div class="blog-image"></div>
+
+            <!-- Readable Section -->
+            <section class="readable-section">
+              <h3>Coffee Marketing, Part 1</h3>
+              <p>
+                Achieve success with your new coffee business by intentionally
+                creating your brand. 
+              </p>
+            </section>
+
+             <!-- Read more button -->
+             <div class="read-more-btn">
+              <a href="./view/stories.html" class="read-more">Read More</a>
+             </div>
+          </div>
+
+          <!-- Blog Card 2 -->
+          <div class="blog-card">
+            <!-- Blog Image -->
+            <div class="blog-image"></div>
+
+            <!-- Readable Section -->
+            <section class="readable-section">
+              <h3>Coffee Marketing, Part 2</h3>
+              <p>
+                Achieve success with your new coffee business by intentionally
+                creating your brand. 
+              </p>
+            </section>
+
+             <!-- Read more button -->
+             <div class="read-more-btn">
+              <a href="./view/stories.html" class="read-more">Read More</a>
+             </div>
+          </div>
+          <!-- Blog Card 3 -->
+          <div class="blog-card">
+            <!-- Blog Image -->
+            <div class="blog-image"></div>
+
+            <!-- Readable Section -->
+            <section class="readable-section">
+              <h3>Coffee Marketing, Part 3</h3>
+              <p>
+                Achieve success with your new coffee business by intentionally
+                creating your brand. 
+              </p>
+            </section>
+
+             <!-- Read more button -->
+             <div class="read-more-btn">
+              <a href="./view/stories.html" class="read-more">Read More</a>
+             </div>
+          </div>
+
+          <!-- Blog Card 4 -->
+          <div class="blog-card">
+            <!-- Blog Image -->
+            <div class="blog-image"></div>
+
+            <!-- Readable Section -->
+            <section class="readable-section">
+              <h3>Coffee Marketing, Part 4</h3>
+              <p>
+                Achieve success with your new coffee business by intentionally
+                creating your brand. 
+              </p>
+            </section>
+
+             <!-- Read more button -->
+             <div class="read-more-btn">
+              <a href="./view/stories.html" class="read-more">Read More</a>
+             </div>
+          </div>
+
+          </div>
+        </div>
+        
+      </article>
+
+      <!-- About and Newsletter -->
+      <article class="section-container about-nl-section" id="about">
+        <!-- About Coffee Hub -->
+        <div class="about-container">
+          <h2>About Coffee Hub</h2>
+          <p><sub>A</sub> t Coffee Hub, we're dedicated in covering the stories of specialty coffee. Our stories have educated our international readership on best business practices and on the amazing things going on in the far-flung corners of the industries. More than anything, Coffee Hub has shown how complex, exciting, sophisticated, and cool coffee are.</p>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="newsletter-container">
+          <form action="/" class="newsletter-form">
+            <p>Sign Up On <br> Our Newsletter </p>
+            <label  class="input-label">Full Name:
+              <input type="full-name" name="full-name" id="fullName" required autocomplete="off">
+            </label >
+            <label class="input-label" >Email:
+              <input type="email" name="email" id="email" required autocomplete="off">
+            </label>
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </article>
+      
+    </main>
+
+    <!-- Footer -->
+    <footer class="section-container">
+      <!-- Top layer Container -->
+      <div class="container">
+        <!-- Left Sub-Level Container -->
+
+        <div class="card left">
+          <!--  Inner container left  -->
+          <div class="contact-container">
+            <p>CONTACT US</p>
+            <a href="#"> <i class="icon fas fa-phone"></i>09506244391 </a>
+
+            <a href="mailto:coffeehub@gmail.com">
+              <i class="icon fas fa-envelope"></i>coffeehub@gmail.com
+            </a>
+          </div>
+
+          <!-- Inner container right -->
+          <div class="contact-container">
+            <p>GET CONNECTED</p>
+            <a href="#"><i class="icon fab fa-facebook"></i>Facebook</a>
+            <a href="#"><i class="icon fab fa-twitter"></i>Twitter</a>
+            <a href="#"
+              ><i class="icon fab fa-instagram-square"></i>Instagram</a
+            >
+          </div>
+        </div>
+
+        <!-- Right Sub-Level Container  -->
+        <div class="card right">
+          <iframe
+            class="footer-ad"
+            src="https://gifer.com/embed/HCqI"
+            height="150"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+
+      <!-- Division line -->
+      <hr />
+      <p class="footer-text">Copyright &copy; Coffee Hub Magazine 2022</p>
+      <a class="footer-text" href="#">Privacy and Policy</a>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+.about-nl-section {
+  display: flex;
+  padding-top: 60px !important;
+  padding-bottom: 60px !important;
+}
+.about-nl-section div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.about-container h2 {
+  color: #3d3429;
+  font-family: "Oswald", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 60px;
+  text-shadow: 0 4px 4px rgb(0, 0, 0, 0.3);
+}
+
+.about-container p {
+  color: #3d3429;
+  font-size: 1.2rem;
+  letter-spacing: 3px;
+  line-height: 40px;
+}
+.about-container p sub {
+  color: #3d3429;
+  font-size: 3rem;
+}
+
+.newsletter-container {
+  width: 40vw;
+}
+.newsletter-form {
+  align-self: flex-end;
+  background: #3d3429;
+  border-radius: 3px;
+  box-shadow: -1px 4px 8px rgb(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  padding: 50px 20px;
+  width: 500px;
+}
+.newsletter-form p {
+  color: white;
+  font-size: 3.2rem;
+  font-weight: lighter;
+}
+
+.input-label {
+  color: white;
+  margin-top: 20px;
+}
+
+.newsletter-form input,
+.newsletter-form button {
+  border-radius: 3px;
+  color: black;
+  padding: 15px;
+  width: 100%;
+}
+.newsletter-form button {
+  color: #3d3429;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 40px;
+}
+
+/*----------------------------*/
+/*-----ABOUT-NL BREAKPOINT----*/
+/*----------------------------*/
+
+@media (max-width: 1030px) {
+  .about-nl-section {
+    flex-direction: column;
+  }
+  .newsletter-container {
+    margin-top: 60px;
+  }
+  .newsletter-form {
+    align-self: center;
+  }
+}

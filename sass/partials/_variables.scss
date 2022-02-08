@@ -1,5 +1,6 @@
 // Box and Text Shadows
 $boxShadow: 0px 4px 4px rgb(0, 0, 0, 0.4);
+$boxShadow2: -1px 4px 8px rgb(0, 0, 0, 0.5);
 $textShadow: 0 4px 4px rgb(0, 0, 0, 0.7);
 
 // Font Families
@@ -11,6 +12,7 @@ $paragraphText: "Red Hat Display", sans-serif;
 $headingSizeXL: 3.2rem;
 $headingSize: 2.5rem;
 $headingSizeSm: 2rem;
+$headingSizeXm: 1.5rem;
 $paragraphSize: 1.2rem;
 $paragraphSize2: 1.1rem;
 $paragraphSize3: 0.8rem;
@@ -27,3 +29,4 @@ $quinary: gray;
 
 // Transparent Background Colors
 $backGround1: rgb(0, 0, 0, 0.5);
+$backGround2: rgb(255, 255, 255, 0.7);

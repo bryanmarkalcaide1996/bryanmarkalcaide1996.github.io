@@ -1,0 +1,75 @@
+/* Outer Container Styling */
+.stories-section {
+  background: $secondary;
+  padding-top: 30px;
+  padding-bottom: 120px;
+
+  h2 {
+    color: $tertiary;
+    font-family: $heading1;
+    font-size: $headingSizeSm;
+    font-weight: $regular;
+    text-shadow: $textShadow;
+  }
+}
+
+.card-container {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  justify-content: space-between;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  .blog-card {
+    background: $backGround2;
+    border-radius: 5px;
+    box-shadow: $boxShadow2;
+    display: flex;
+    flex-direction: column;
+    height: 480px;
+
+    .blog-image {
+      background-image: url(../assets/photos/heroImage4.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 5px 5px 0 0;
+      height: 500px;
+    }
+    .readable-section {
+      padding: 20px;
+      height: 100%;
+
+      h3 {
+        color: $primary;
+        font-family: $heading2;
+        font-size: $headingSizeXm;
+        margin-bottom: 10px;
+      }
+      p {
+        color: $primary;
+        line-height: 30px;
+      }
+    }
+    .read-more-btn {
+      padding: 20px;
+
+      a {
+        background: $primary;
+        border-radius: 5px;
+        color: $tertiary;
+        display: block;
+        font-family: $heading1;
+        font-size: $paragraphSize;
+        padding: 15px;
+        text-align: center;
+      }
+    }
+  }
+}
+// Blog-card Animation
+.blog-card:hover {
+  transform: scale(1.05);
+  transition: all 0.3s;
+}

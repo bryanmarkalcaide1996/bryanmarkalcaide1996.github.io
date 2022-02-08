@@ -36,8 +36,9 @@
   flex-direction: column;
   height: 480px;
 }
+
 .blog-image {
-  background-image: url(../assets/photos/heroImage.jpg);
+  background-image: url(../assets/photos/heroImage4.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

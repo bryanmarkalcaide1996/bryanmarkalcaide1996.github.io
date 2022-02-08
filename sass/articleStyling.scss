@@ -1,0 +1,75 @@
+.article-container {
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: minmax(0, 1fr) 300px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+
+  h1 {
+    color: $primary;
+    font-family: $heading2;
+    font-size: $headingSizeXL;
+  }
+
+  figure {
+    a,
+    figcaption {
+      font-size: 0.9rem;
+      color: $quinary;
+      margin-right: 15px;
+    }
+    .article-image {
+      width: 100%;
+    }
+  }
+
+  figure,
+  .paragraph-card {
+    margin: 30px auto;
+  }
+}
+
+.paragraph-card {
+  h2,
+  h3 {
+    font-family: $heading2;
+    color: $primary;
+    margin-bottom: 15px;
+  }
+
+  h2 {
+    font-size: $headingSize;
+  }
+  h3 {
+    font-size: $headingSizeSm;
+  }
+  p,
+  li {
+    font-size: $paragraphSize;
+    line-height: $headingSizeSm;
+    list-style: decimal !important;
+    margin-top: 15px;
+  }
+}
+
+.right-box {
+  align-self: flex-start;
+  position: sticky;
+  top: 60px;
+}
+.side-ad {
+  width: 230px;
+  float: right;
+}
+aside p {
+  font-size: $paragraphSize3;
+}
+
+@media (max-width: 820px) {
+  .article-container {
+    display: block;
+  }
+  .right-box {
+    display: none;
+  }
+}

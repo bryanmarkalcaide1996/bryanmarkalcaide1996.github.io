@@ -9,14 +9,17 @@
   text-decoration: none;
   list-style: none;
 }
+
 body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
+
 .section-container {
   padding: 30px 120px;
 }
+
 input,
 button {
   background: white;
@@ -27,8 +30,8 @@ button {
   padding: 0;
   outline: inherit;
 }
-/* This ends here */
 
+/* This ends here */
 /*----------------------------*/
 /*-----GENERAL BREAKPOINTS----*/
 /*----------------------------*/
@@ -36,114 +39,128 @@ button {
   .section-container {
     padding: 50px;
   }
+
   .search {
     width: 20vw;
   }
+
   .contact-container:nth-child(2) {
     margin-left: 30px;
   }
 }
 /* This ends here */
-
 @media (max-width: 960px) {
   .section-container {
     padding: 0 30px;
   }
+
   /* HEADER */
   header {
     flex-direction: column;
   }
+
   .main-nav {
     order: 1;
   }
+
   .search-box {
     margin: 10px 0;
   }
+
   .search {
     width: 240px;
   }
 
   /* This ends here */
-
   /* HERO */
   .heroContainer {
     height: 30vh;
   }
-  /* This ends here */
 
+  /* This ends here */
   /* STORIES */
   .stories-section {
     background: #cfb497;
     padding-top: 10px;
     padding-bottom: 60px;
   }
+
   .card-container {
     padding-top: 20px;
   }
-  /* This ends here */
 
+  /* This ends here */
   /* FOOTER */
   .container {
     flex-direction: column-reverse;
   }
+
   .card {
     width: 100%;
   }
+
   .left {
     justify-content: flex-start;
   }
+
   .footer-ad {
     margin: 30px auto;
   }
 }
 /* This ends here */
-
 @media (max-width: 512px) {
   .section-container {
     padding: 0 30px;
   }
+
   /* HEADER */
   #check:checked ~ .main-nav {
     left: 0;
     transition: ease 0.5s;
   }
+
   #check:checked ~ .menu-icon {
     color: white;
     transform: rotate(-90deg);
     transition: all 0.5s;
   }
+
   .menu-icon {
     display: block;
     margin-right: 30px;
     transform: rotate(90);
     transition: all 0.5s;
   }
+
   .main-nav {
-    background: rgb(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.6);
     left: -100%;
     position: absolute;
     top: 160px;
     transition: ease 0.5s;
     width: 100%;
   }
+
   .main-nav ul li {
     display: block;
     text-align: center;
   }
+
   .main-nav ul li:nth-child(2) {
     margin: 30px 0;
   }
+
   .search {
     width: 55vw;
   }
-  /* This ends here */
 
+  /* This ends here */
   /* HERO */
   .heroContainer {
     height: 18vh;
   }
-  /* This ends here */
 
+  /* This ends here */
   /* STORIES */
   .card-container {
     display: grid;
@@ -152,24 +169,27 @@ button {
     justify-content: space-between;
     padding-bottom: 50px;
   }
-  /* This ends here */
 
+  /* This ends here */
   /* NEWSLETTER */
   .newsletter-form {
     width: 88vw;
   }
+
   .newsletter-form p {
     font-size: 10vw;
   }
-  /* This ends here */
 
+  /* This ends here */
   /* FOOTER */
   .left {
     flex-direction: column;
   }
+
   .contact-container:nth-child(2) {
     margin: 20px 0;
   }
+
   .footer-ad {
     width: 100%;
   }

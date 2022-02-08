@@ -1,0 +1,24 @@
+{
+  "name": "project---1-e-magazine",
+  "version": "1.0.0",
+  "description": "coffee-e-magazine",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bryanmarkalcaide1996/e-magazine.git"
+  },
+  "author": "Bryan Mark Alcaide",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bryanmarkalcaide1996/e-magazine/issues"
+  },
+  "homepage": "https://github.com/bryanmarkalcaide1996/e-magazine#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.49.7"
+  }
+}

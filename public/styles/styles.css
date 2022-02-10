@@ -1,3 +1,99 @@
+.banner-container {
+  display: flex;
+  justify-content: center;
+}
+
+.shop-banner-h1 {
+  color: #3d3429;
+  border-top: 2px solid #3d3429;
+  border-bottom: 2px solid #3d3429;
+  display: inline-block;
+  font-family: "Oswald", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.7);
+  margin: 30px auto;
+}
+
+.merch-container {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  padding: 30px;
+}
+.merch-container .merch-container > div {
+  height: 100%;
+}
+.merch-container .merch-card,
+.merch-container .item-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.merch-container h4,
+.merch-container p {
+  color: white;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.merch-card {
+  background: #3d3429;
+  border-radius: 3px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+  height: 500px;
+}
+
+.img-container {
+  height: 250px;
+  overflow: hidden;
+}
+
+.merch-img {
+  border-radius: 3px;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.item-description {
+  padding: 10px;
+  height: 100%;
+}
+
+.merch-heading {
+  font-family: "podkova", serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.cta {
+  background: #bfab94;
+  border-radius: 3px;
+  padding: 15px 20px;
+}
+.cta a {
+  color: white;
+  display: block;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.7);
+}
+
+.merch-card:hover {
+  transform: scale(1.01);
+  transition: all 0.3s;
+}
+
+@media (max-width: 410px) {
+  .merch-container {
+    grid-template-columns: auto;
+  }
+}
 header {
   background: #bfab94;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
@@ -356,9 +452,6 @@ footer .contact-container a:hover {
   transition: all 0.5s;
 }
 
-/*----------------------------*/
-/*-------GENERAL STYLING------*/
-/*----------------------------*/
 * {
   box-sizing: border-box;
   font-family: "Red Hat Display", sans-serif;
@@ -373,6 +466,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  min-width: 320px;
 }
 
 .section-container {
@@ -390,9 +484,6 @@ button {
 }
 
 /* This ends here */
-/*----------------------------*/
-/*-----GENERAL BREAKPOINTS----*/
-/*----------------------------*/
 @media (max-width: 1242px) {
   .section-container {
     padding: 50px;

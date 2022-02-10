@@ -1,0 +1,94 @@
+.banner-container {
+  display: flex;
+  justify-content: center;
+}
+.shop-banner-h1 {
+  color: $primary;
+  border-top: 2px solid $primary;
+  border-bottom: 2px solid $primary;
+  display: inline-block;
+  font-family: $heading1;
+  font-size: $headingSize;
+  font-weight: $regular;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: $textShadow;
+  margin: 30px auto;
+}
+
+.merch-container {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  padding: 30px;
+
+  .merch-container > div {
+    height: 100%;
+  }
+
+  // combined stylings
+  .merch-card,
+  .item-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  // combined stylings
+  h4,
+  p {
+    color: $tertiary;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+  }
+}
+
+.merch-card {
+  background: $primary;
+  border-radius: $borderRadiusLight;
+  box-shadow: $boxShadow;
+  height: 500px;
+}
+.img-container {
+  height: 250px;
+  overflow: hidden;
+}
+.merch-img {
+  border-radius: $borderRadiusLight;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+.item-description {
+  padding: 10px;
+  height: 100%;
+}
+.merch-heading {
+  font-family: $heading2;
+  font-size: $headingSizeXm;
+  text-transform: uppercase;
+}
+.cta {
+  background: $secondary;
+  border-radius: $borderRadiusLight;
+  padding: 15px 20px;
+
+  a {
+    color: $tertiary;
+    display: block;
+    font-family: $heading1;
+    font-size: $paragraphSize;
+    text-align: center;
+    text-shadow: $textShadow;
+  }
+}
+
+.merch-card:hover {
+  transform: scale(1.01);
+  transition: all 0.3s;
+}
+@media (max-width: 410px) {
+  .merch-container {
+    grid-template-columns: auto;
+  }
+}

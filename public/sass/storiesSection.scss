@@ -57,7 +57,7 @@
 
       a {
         background: $primary;
-        border-radius: 5px;
+        border-radius: $borderRadiusMd;
         color: $tertiary;
         display: block;
         font-family: $heading1;

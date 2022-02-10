@@ -1,0 +1,29 @@
+<%- include('./partials/header.ejs'); %>
+
+<main>
+  <div class="banner-container">
+    <h1 class="shop-banner-h1">Shop</h1>
+  </div>
+  <div class="merch-container">
+    <% merchList.forEach(merch =>{ %>
+    <div class="merch-card">
+      <div class="img-container">
+        <img class="merch-img" src="<%=merch.img%>" />
+      </div>
+
+      <div class="item-description">
+        <div>
+          <h4 class="merch-heading"><%= merch.title%></h4>
+          <h4 class="merch-heading">$ <%= merch.price%></h4>
+        </div>
+        <p class="merch-p"><%= merch.desc%></p>
+        <div class="cta">
+          <a href="/checkout">Place Order</a>
+        </div>
+      </div>
+    </div>
+    <% }) %>
+  </div>
+</main>
+
+<%- include('./partials/footer.ejs'); -%>

@@ -53,12 +53,12 @@ header {
   // Search Box Styling
   .search-box {
     background: $backGround1;
-    border-radius: 3px;
+    border-radius: $borderRadiusLight;
     padding: 8px 10px;
   }
   .search {
     background: $tertiary;
-    border-radius: 3px;
+    border-radius: $borderRadiusLight;
     color: $quaternary;
     padding: 5px 5px 5px 15px;
     width: 250px;
@@ -66,7 +66,7 @@ header {
   .search-btn {
     background: $secondary;
     padding: 5px 10px;
-    border-radius: 3px;
+    border-radius: $borderRadiusLight;
   }
 
   // Header Animations

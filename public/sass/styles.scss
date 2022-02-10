@@ -1,4 +1,5 @@
 @import "./partials/variables.scss";
+@import "./shop.scss";
 @import "./headerStyling.scss";
 @import "./heroStyling.scss";
 @import "./storiesSection.scss";
@@ -6,9 +7,7 @@
 @import "./articleStyling.scss";
 @import "./footerStyling.scss";
 
-/*----------------------------*/
-/*-------GENERAL STYLING------*/
-/*----------------------------*/
+// General Styling
 * {
   box-sizing: border-box;
   font-family: $paragraphText;
@@ -22,6 +21,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  min-width: 320px;
 }
 .section-container {
   padding: 30px 120px;
@@ -37,9 +37,7 @@ button {
 }
 /* This ends here */
 
-/*----------------------------*/
-/*-----GENERAL BREAKPOINTS----*/
-/*----------------------------*/
+// Global Breakpoints
 @media (max-width: 1242px) {
   .section-container {
     padding: 50px;
@@ -57,6 +55,7 @@ button {
   .section-container {
     padding: 0 30px;
   }
+
   /* HEADER */
   header {
     flex-direction: column;
@@ -114,6 +113,7 @@ button {
   .section-container {
     padding: 0 30px;
   }
+
   /* HEADER */
   header {
     #check:checked ~ .main-nav {

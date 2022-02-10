@@ -76,6 +76,6 @@ app.get("/shop", (req, res) => {
   res.render("shop", { merchList: data.merch });
 });
 
-app.listen(3000, () => {
+app.listen(process.env.PORT || 3000, () => {
   console.log("Server initiated on port 3000");
 });

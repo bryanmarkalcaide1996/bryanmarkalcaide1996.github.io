@@ -11,8 +11,7 @@
   display: flex;
   justify-content: center;
 }
-
-.shop-banner-h1 {
+.banner-container h1 {
   color: #3d3429;
   border-top: 2px solid #3d3429;
   border-bottom: 2px solid #3d3429;
@@ -414,8 +413,6 @@ footer {
   display: flex;
   flex-direction: column;
   padding-bottom: 60px !important;
-  /* Left Card Styling */
-  /* Right Card Styling */
   /* Footer Text Styling */
 }
 footer .container {

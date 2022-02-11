@@ -1,19 +1,21 @@
 .banner-container {
   display: flex;
   justify-content: center;
-}
-.shop-banner-h1 {
-  color: $primary;
-  border-top: 2px solid $primary;
-  border-bottom: 2px solid $primary;
-  display: inline-block;
-  font-family: $heading1;
-  font-size: $headingSize;
-  font-weight: $regular;
-  text-align: center;
-  text-decoration: none;
-  text-shadow: $textShadow;
-  margin: 30px auto;
+
+  // Direct Child Styling
+  h1 {
+    color: $primary;
+    border-top: 2px solid $primary;
+    border-bottom: 2px solid $primary;
+    display: inline-block;
+    font-family: $heading1;
+    font-size: $headingSize;
+    font-weight: $regular;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: $textShadow;
+    margin: 30px auto;
+  }
 }
 
 .merch-container {
@@ -22,6 +24,7 @@
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   padding: 30px;
 
+  // Direct Child Styling
   .merch-container > div {
     height: 100%;
   }

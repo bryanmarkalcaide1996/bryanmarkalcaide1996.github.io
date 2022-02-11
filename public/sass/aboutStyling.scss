@@ -1,15 +1,19 @@
+// Main Container Styling
 .about-nl-section {
   display: flex;
   padding-top: 60px !important;
   padding-bottom: 60px !important;
 
+  // Direct Child Styling
   div {
     display: flex;
     flex-direction: column;
     width: 100%;
   }
 }
+// Left-Side Container
 .about-container {
+  // Direct Child Styling
   h2 {
     color: $primary;
     font-family: $heading1;
@@ -32,6 +36,7 @@
 .newsletter-container {
   width: 40vw;
 
+  // Direct Child Styling
   .newsletter-form {
     align-self: flex-end;
     background: $primary;
@@ -65,6 +70,7 @@
     margin-top: 40px;
   }
 }
+// Media Queries
 @media (max-width: 1030px) {
   .about-nl-section {
     flex-direction: column;

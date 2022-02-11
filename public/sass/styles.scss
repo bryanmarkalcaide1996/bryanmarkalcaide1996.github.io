@@ -1,3 +1,4 @@
+// File Imports
 @import "./partials/variables.scss";
 @import "./404.scss";
 @import "./shop.scss";
@@ -36,7 +37,7 @@ button {
   padding: 0;
   outline: inherit;
 }
-/* This ends here */
+// This Ends Here
 
 // Global Breakpoints
 @media (max-width: 1242px) {
@@ -50,14 +51,14 @@ button {
     margin-left: 30px;
   }
 }
-/* This ends here */
+// This Ends Here
 
 @media (max-width: 960px) {
   .section-container {
     padding: 0 30px;
   }
 
-  /* HEADER */
+  // Header
   header {
     flex-direction: column;
     .main-nav {
@@ -71,15 +72,15 @@ button {
     }
   }
 
-  /* This ends here */
+  // This Ends Here
 
-  /* HERO */
+  // Hero
   .heroContainer {
     height: 30vh;
   }
-  /* This ends here */
+  // This Ends Here
 
-  /* STORIES */
+  //  Stories
   .stories-section {
     background: $secondary;
     padding-top: 10px;
@@ -89,10 +90,9 @@ button {
       padding-top: 20px;
     }
   }
+  // This Ends Here
 
-  /* This ends here */
-
-  /* FOOTER */
+  // Footer
   footer {
     .container {
       flex-direction: column-reverse;
@@ -108,14 +108,14 @@ button {
     }
   }
 }
-/* This ends here */
+// This Ends Here
 
 @media (max-width: 512px) {
   .section-container {
     padding: 0 30px;
   }
 
-  /* HEADER */
+  // Header
   header {
     #check:checked ~ .main-nav {
       left: 0;
@@ -150,15 +150,15 @@ button {
       width: 55vw;
     }
   }
-  /* This ends here */
+  // This Ends Here
 
-  /* HERO */
+  // Hero
   .heroContainer {
     height: 18vh;
   }
-  /* This ends here */
+  // This Ends Here
 
-  /* STORIES */
+  //  Stories
   .card-container {
     display: grid;
     gap: 30px;
@@ -166,9 +166,9 @@ button {
     justify-content: space-between;
     padding-bottom: 50px;
   }
-  /* This ends here */
+  // This Ends Here
 
-  /* NEWSLETTER */
+  // Newsletter
   .about-nl-section {
     .newsletter-form {
       width: 88vw;
@@ -178,9 +178,9 @@ button {
     }
   }
 
-  /* This ends here */
+  // This Ends Here
 
-  /* FOOTER */
+  // Footer
   footer {
     .left {
       flex-direction: column;

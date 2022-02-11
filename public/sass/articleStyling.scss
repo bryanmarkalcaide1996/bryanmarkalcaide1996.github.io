@@ -1,3 +1,4 @@
+// Article Page Styling
 .article-container {
   display: grid;
   gap: 3rem;
@@ -11,6 +12,8 @@
     font-family: $heading2;
     font-size: $headingSizeXL;
   }
+
+  // Figure Styling
   figure {
     a,
     figcaption {
@@ -28,6 +31,7 @@
   }
 }
 
+// Paragraph Card Styling
 .paragraph-card {
   // Combined Selector Styling
   h2,

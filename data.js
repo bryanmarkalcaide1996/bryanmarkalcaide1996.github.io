@@ -1,3 +1,5 @@
+// This file is a collection of objects inside an array and I used this to simulate a database.
+
 exports.merch = [
   {
     id: 1,

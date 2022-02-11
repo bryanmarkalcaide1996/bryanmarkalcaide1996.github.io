@@ -1,4 +1,4 @@
-// Main Container Styling
+// About and Newsletter Styling
 .about-nl-section {
   display: flex;
   padding-top: 60px !important;
@@ -11,7 +11,7 @@
     width: 100%;
   }
 }
-// Left-Side Container
+// About Container Styling
 .about-container {
   // Direct Child Styling
   h2 {
@@ -33,10 +33,11 @@
     font-size: 3rem;
   }
 }
+
+// Newsletter Form Styling
 .newsletter-container {
   width: 40vw;
 
-  // Direct Child Styling
   .newsletter-form {
     align-self: flex-end;
     background: $primary;
@@ -47,15 +48,18 @@
     padding: 50px 20px;
     width: 500px;
   }
+
   .newsletter-form p {
     color: $tertiary;
     font-size: 3.2rem;
     font-weight: lighter;
   }
+
   .input-label {
     color: $tertiary;
     margin-top: 20px;
   }
+
   .newsletter-form input,
   .newsletter-form button {
     border-radius: $borderRadiusLight;
@@ -63,6 +67,7 @@
     padding: 15px;
     width: 100%;
   }
+
   .newsletter-form button {
     color: $primary;
     font-size: 1.5rem;
@@ -70,6 +75,7 @@
     margin-top: 40px;
   }
 }
+
 // Media Queries
 @media (max-width: 1030px) {
   .about-nl-section {

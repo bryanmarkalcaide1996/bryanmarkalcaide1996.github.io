@@ -5,6 +5,7 @@
     <h1>Shop</h1>
   </div>
   <div class="merch-container">
+    <!-- This will loop through the merchList array and will generate a card for each object found inside the array -->
     <% merchList.forEach(merch =>{ %>
     <div class="merch-card">
       <div class="img-container">
@@ -27,3 +28,7 @@
 </main>
 
 <%- include('./partials/footer.ejs'); -%>
+<!-- this include markers indicates that a header.ejs and footer.ejs partial is being imported 
+  they may not be visible here but they are valid and can be seen when rendered on screen .
+  the package responsible for rendering ejs files is ejs installed via npm
+-->

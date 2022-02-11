@@ -1,4 +1,4 @@
-/* Outer Container Styling */
+// Stories Section Styling
 .stories-section {
   background: $secondary;
   padding-top: 30px;
@@ -13,6 +13,7 @@
   }
 }
 
+// Card container Styling
 .card-container {
   display: grid;
   gap: 30px;
@@ -21,6 +22,7 @@
   padding-top: 50px;
   padding-bottom: 50px;
 
+  // Individual Card Styling
   .blog-card {
     background: $backGround2;
     border-radius: 5px;
@@ -37,6 +39,7 @@
       border-radius: 5px 5px 0 0;
       height: 500px;
     }
+
     .readable-section {
       padding: 20px;
       height: 100%;
@@ -52,6 +55,7 @@
         line-height: 30px;
       }
     }
+
     .read-more-btn {
       padding: 20px;
 

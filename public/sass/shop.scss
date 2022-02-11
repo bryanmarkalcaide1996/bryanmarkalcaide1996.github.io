@@ -1,3 +1,4 @@
+// Shop Page Styling
 .banner-container {
   display: flex;
   justify-content: center;
@@ -85,11 +86,12 @@
     text-shadow: $textShadow;
   }
 }
-
+// .merch-card animation
 .merch-card:hover {
   transform: scale(1.01);
   transition: all 0.3s;
 }
+// Media Queries
 @media (max-width: 410px) {
   .merch-container {
     grid-template-columns: auto;

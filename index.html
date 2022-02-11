@@ -37,6 +37,7 @@
       <!-- Brand -->
       <div class="brand">
         <h1>
+      <!-- the href ='/' refers to the get route specified for the homepage -->
           <a href="/">   
             Coffee Hub
             <p>MAGAZINE</p>
@@ -47,13 +48,17 @@
       <!-- Nav links -->
       <nav class="main-nav">
         <ul>
+          <!-- Links #stories and #about are all internal navigation -->
           <li><a href="#stories">Stories</a></li>
           <li><a href="#about">About</a></li>
+          <!-- the href ='/shop' refers to the get route specified for the shop page -->
           <li><a href="/shop">Shop</a></li>
         </ul>
       </nav>
 
       <!-- Search box -->
+      <!-- the action ='/' will catch post request coming from the homepage-->
+      <!-- the method="post" means once the button is pressed it will trigger a post request on the homepage -->
       <form action="/" method="post" class="search-box">
         <input
           type="text"
@@ -62,6 +67,8 @@
           name="search"
           autocomplete="off"
         />
+        <!-- The name and value attribute will serve as a tangible reference for 
+          express.urlencoded, all values then can be stored in a variable and can be used to create a logical flow via javaScript -->
         <button type="submit" class="search-btn" name="button" value="search">
           <i class="fas fa-search"></i>
         </button>
@@ -80,6 +87,7 @@
         
         <!-- Horizontal container -->
         <div class="card-container">
+
           <!-- Blog Card 1 -->
           <div class="blog-card">
             <!-- Blog Image -->
@@ -95,9 +103,11 @@
 
              <!-- Read more button -->
              <div class="read-more-btn">
+                 <!-- the href ='/story1' refers to the get route specified for the story-1.html page -->
               <a href="/story1" class="read-more">Read More</a>
              </div>
           </div>
+
           <!-- Blog Card 2 -->
           <div class="blog-card">
             <!-- Blog Image -->
@@ -113,9 +123,11 @@
 
              <!-- Read more button -->
              <div class="read-more-btn">
+            <!-- the href ='/story2' refers to the get route specified for the story-2.html page -->
               <a href="/story2" class="read-more">Read More</a>
              </div>
           </div>
+
           <!-- Blog Card 3 -->
           <div class="blog-card">
             <!-- Blog Image -->
@@ -131,9 +143,11 @@
 
              <!-- Read more button -->
              <div class="read-more-btn">
+              <!-- the href ='/story3' refers to the get route specified for the story-3.html page -->
               <a href="/story3" class="read-more">Read More</a>
              </div>
           </div>
+
           <!-- Blog Card 4 -->
           <div class="blog-card">
             <!-- Blog Image -->
@@ -149,6 +163,7 @@
 
              <!-- Read more button -->
              <div class="read-more-btn">
+               <!-- the href ='/story4' refers to the get route specified for the story-4.html page -->
               <a href="/story4" class="read-more">Read More</a>
              </div>
           </div>
@@ -203,6 +218,7 @@
           <!-- Inner container right -->
           <div class="contact-container">
             <p>GET CONNECTED</p>
+            <!-- all links used here are just dummy links -->
             <a href="#"><i class="icon fab fa-facebook"></i>Facebook</a>
             <a href="#"><i class="icon fab fa-twitter"></i>Twitter</a>
             <a href="#"

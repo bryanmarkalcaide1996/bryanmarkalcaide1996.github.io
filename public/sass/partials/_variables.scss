@@ -1,3 +1,6 @@
+// The _ in the start of file name indicates that this particular scss file will not be generated
+//  as part of the css file but it's values can and are still being used throughout the scss because it's being imported in the main styles.scss.
+
 // Border Radius
 $borderRadiusLight: 3px;
 $borderRadiusMd: 5px;

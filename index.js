@@ -56,6 +56,7 @@ app.post("/", (req, res) => {
   res.redirect("/");
 });
 
+// get request pages
 app.get("/story1", (req, res) => {
   res.sendFile(__dirname + "/views/story-1.html");
 });
@@ -74,6 +75,12 @@ app.get("/story4", (req, res) => {
 
 app.get("/shop", (req, res) => {
   res.render("shop", { merchList: data.merch });
+});
+
+// 404 handler page
+app.use(function (req, res) {
+  res.status(404);
+  res.render("404");
 });
 
 app.listen(process.env.PORT || 3000, () => {
